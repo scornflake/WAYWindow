@@ -254,7 +254,6 @@ static float kWAYWindowDefaultTrafficLightButtonsTopMargin = 0;
 	kWAYWindowDefaultTrafficLightButtonsLeftMargin = NSMinX(closeButton.frame);
 	kWAYWindowDefaultTrafficLightButtonsTopMargin = NSHeight(closeButton.superview.frame)-NSMaxY(closeButton.frame);
 	
-	self.styleMask |= NSFullSizeContentViewWindowMask;
 	_trafficLightButtonsLeftMargin = kWAYWindowDefaultTrafficLightButtonsLeftMargin;
 	
 	self.hidesTitle = YES;
