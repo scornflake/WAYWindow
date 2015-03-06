@@ -273,6 +273,10 @@ static float kWAYWindowDefaultTrafficLightButtonsTopMargin = 0;
 		frame.origin.x = _trafficLightButtonsLeftMargin +idx*(NSWidth(frame) + 6);
 		[standardButton setFrame:frame];
 	}];
+
+    NSView *themeFrame = self.titleBarView.superview.superview;
+    [themeFrame viewWillStartLiveResize];
+    [themeFrame viewDidEndLiveResize];
 }
 
 #pragma mark - NSWindow Delegate
