@@ -36,13 +36,16 @@
 @property (nonatomic) IBInspectable CGFloat titleBarHeight;
 
 //// Returns the titlebar view of the window, which you can add arbitrary subviews to.
-@property (strong,readonly) NSView *titleBarView;
+@property (strong,readonly) IBOutlet NSView *titleBarView;
 
 /// If set to YES, the standard window button will be vertically centered. Default: YES.
 @property (nonatomic) IBInspectable BOOL centerTrafficLightButtons;
 
 /// Defines the left margin of the standard window buttons. Defaut: OS X default value.
 @property (nonatomic) IBInspectable CGFloat trafficLightButtonsLeftMargin;
+
+/// Defines the top margin of the standard window buttons. Used if not centered. Defaut: OS X default value.
+@property (nonatomic) IBInspectable CGFloat trafficLightButtonsTopMargin;
 
 /// If set to YES, the title of the window will be hidden. Default: YES.
 @property (nonatomic) IBInspectable BOOL hidesTitle;
