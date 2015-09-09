@@ -27,7 +27,7 @@
  - Check out the WWDC '14 session `Adopting Advanced Features of the New UI of OS X Yosemite´, which provides more details on how to make use of the new Yosemite APIs.
  - Also check out the new APIs in NSScrollView to make use of contentInsets, scrollInsets, and more.
  */
-@interface WAYWindow : NSWindow
+@interface WAYWindow : MouseMovementWindow
 
 /// Returns YES, if the class supports vibrant appearances. Can be used to determine if running on OS X 10.10+
 + (BOOL) supportsVibrantAppearances;
